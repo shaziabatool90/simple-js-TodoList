@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .to-do{
+            width: 400px;
+            background-color: rgb(55,64,80);
+            padding: 30px;
+            border-radius: 20px;
+        }
+        h1{
+            text-align: center;
+            font-size: 2em;
+            color: white;
+        }
+        .input{
+            border-radius: 30px;
+            border: 1px solid rgb(237,238,240);
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(237,238,240);
+        }
+        #taskInput {
+            height: 20px;
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            background-color: rgb(237,238,240);
+        }
+        #addTaskButton {
+            padding: 0 20px;
+            color: white;
+            border-radius: 20px;
+            border: 1px solid white;
+            background-color: rgb(252,89,64);
+        }
+        #addTaskButton:hover {
+            background-color: rgb(193,193,193);
+            color: black;
+        }
+        #taskList{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+       
+    </style>
+</head>
+<body>
+
+
+    <section class="to-do">
+        <h1>To-Do List</h1>
+        <div class="input">
+            <input type="text" id="taskInput" placeholder="Add a new task">
+            <button id="addTaskButton">Add</button>
+        </div>
+        <div class="output">
+            <h2 id="h2"></h2>
+            <ul id="taskList"></ul>
+        </div>
+    
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
